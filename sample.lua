@@ -1,6 +1,6 @@
-led = require('ws2812obj')
+led = require('ws2812rgb')
 
-b = led.rgbBar:new();
+b = ws2812:new();
 b:set( 1, 255,   0,   0 ); -- red
 b:set( 2, 255, 128,   0 ); -- orange
 b:set( 3, 128, 255,   0 ); -- yellow

@@ -1,6 +1,6 @@
 led = require('ws2812rgb')
 
-b = ws2812:new();
+b = ws2812rgb:new();
 b:set( 1, 255,   0,   0 ); -- red
 b:set( 2, 255, 128,   0 ); -- orange
 b:set( 3, 128, 255,   0 ); -- yellow

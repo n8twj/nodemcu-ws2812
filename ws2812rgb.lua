@@ -19,6 +19,7 @@ function ws2812rgb:get( i )
     c = self[i];
     return string.char( c[1], c[2], c[3] );
 end;
+
 function ws2812rgb:update()
     local s = "";
     for i = 1, self.count, 1 do

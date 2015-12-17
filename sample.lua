@@ -1,6 +1,7 @@
-led = require('ws2812rgb')
-
-b = ws2812rgb:new();
+local ws2812rgb = require('ws2812rgb')
+pin = 3
+ledcount = 8
+b = ws2812rgb:new(pin, ledcount);
 b:set( 1, 255,   0,   0 ); -- red
 b:set( 2, 255, 128,   0 ); -- orange
 b:set( 3, 128, 255,   0 ); -- yellow
@@ -10,4 +11,3 @@ b:set( 6,   0,   0, 255 ); -- blue
 b:set( 7, 128,   0, 255 ); -- indigo
 b:set( 8, 255,   0, 128 ); -- violet
 b:update();
-
